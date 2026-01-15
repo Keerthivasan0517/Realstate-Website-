@@ -370,7 +370,7 @@ export default function HomePage() {
                 <div className="flex items-start gap-4">
                   <div className="w-1 h-1 rounded-full bg-slate-900 mt-2" />
                   <div>
-                    <h4 className="font-medium text-slate-900 mb-1">South Mumbai & Lutyens' Delhi</h4>
+                    <h4 className="font-medium text-slate-900 mb-1">South Mumbai & Lutyens&apos; Delhi</h4>
                     <p className="text-sm text-slate-600 font-light">Heritage meets power corridors</p>
                   </div>
                 </div>
