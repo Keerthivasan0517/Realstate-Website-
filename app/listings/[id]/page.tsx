@@ -3,20 +3,24 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { allProperties } from "@/data/properties";
 
-interface PropertyDetailsPageProps {
-  params: {
+type PropertyDetailsPageProps = {
+  params: Promise<{
     id: string;
-  };
-}
+  }>;
+};
 
 export function generateStaticParams() {
   return allProperties.map((property) => ({
-    id: property.id
+    id: property.id,
   }));
 }
 
-export default function PropertyDetailsPage({ params }: PropertyDetailsPageProps) {
-  const property = allProperties.find((p) => p.id === params.id);
+export default async function PropertyDetailsPage({
+  params,
+}: PropertyDetailsPageProps) {
+  const { id } = await params;
+
+  const property = allProperties.find((p) => p.id === id);
 
   if (!property) {
     notFound();
@@ -43,6 +47,7 @@ export default function PropertyDetailsPage({ params }: PropertyDetailsPageProps
                   className="h-full w-full object-cover transition duration-700 hover:scale-[1.02]"
                 />
               </div>
+
               <div className="grid grid-cols-3 gap-4">
                 {property.images.slice(1, 4).map((image) => (
                   <div
@@ -89,6 +94,7 @@ export default function PropertyDetailsPage({ params }: PropertyDetailsPageProps
                   {property.beds} beds
                 </span>
               </div>
+
               <div className="flex items-center gap-2">
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-xs font-semibold text-slate-900 shadow-sm">
                   {property.baths}
@@ -97,6 +103,7 @@ export default function PropertyDetailsPage({ params }: PropertyDetailsPageProps
                   {property.baths} baths
                 </span>
               </div>
+
               <div className="flex items-center gap-2">
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-[11px] font-semibold text-slate-900 shadow-sm">
                   m²
@@ -133,4 +140,3 @@ export default function PropertyDetailsPage({ params }: PropertyDetailsPageProps
     </section>
   );
 }
-
