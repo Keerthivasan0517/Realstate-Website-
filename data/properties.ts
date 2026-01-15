@@ -1,28 +1,17 @@
 import type { Property } from "@/components/PropertyCard";
 
 const baseImages = {
-  cityLoft:
-    "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  modernLiving:
-    "https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  skylinePenthouse:
-    "https://images.pexels.com/photos/6434631/pexels-photo-6434631.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  gardenTownhouse:
-    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  minimalistStudio:
-    "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  waterfrontVilla:
-    "https://images.pexels.com/photos/32870/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200",
-  luxuryPenthouse:
-    "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  modernMansion:
-    "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  beachHouse:
-    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  urbanLoft:
-    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  hillsideEstate:
-    "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  cityLoft: "/images/properties/mumbai-loft.png",
+  modernLiving: "/images/properties/gurgaon-apartment.png",
+  skylinePenthouse: "/images/properties/mumbai-penthouse.png",
+  gardenTownhouse: "/images/properties/delhi-bungalow.png",
+  minimalistStudio: "/images/properties/bangalore-studio.png",
+  waterfrontVilla: "/images/properties/goa-villa.png",
+  luxuryPenthouse: "/images/properties/gurgaon-apartment.png",
+  modernMansion: "/images/properties/delhi-bungalow.png",
+  beachHouse: "/images/properties/goa-villa.png",
+  urbanLoft: "/images/properties/mumbai-penthouse.png",
+  hillsideEstate: "/images/properties/delhi-bungalow.png"
 };
 
 export const allProperties: (Property & {
@@ -30,238 +19,238 @@ export const allProperties: (Property & {
   description: string;
   secondaryDescription: string;
 })[] = [
-  {
-    id: "skyline-penthouse",
-    title: "Skyline Penthouse with Panoramic City Views",
-    location: "Central District, Aurora City",
-    priceFormatted: "$2,150,000",
-    image: baseImages.skylinePenthouse,
-    images: [
-      baseImages.skylinePenthouse,
-      baseImages.modernLiving,
-      baseImages.cityLoft,
-      baseImages.minimalistStudio
-    ],
-    beds: 3,
-    baths: 3,
-    size: 210,
-    status: "For sale",
-    description:
-      "A light-filled penthouse perched high above the city skyline, featuring floor-to-ceiling windows, a private wraparound terrace, and custom-crafted interiors.",
-    secondaryDescription:
-      "Located in a discreet, full-service residence with 24/7 concierge, this home is steps away from galleries, restaurants, and boutique shopping."
-  },
-  {
-    id: "garden-townhouse",
-    title: "Garden Townhouse with Private Courtyard",
-    location: "Elmwood Quarter, Aurora City",
-    priceFormatted: "$1,480,000",
-    image: baseImages.gardenTownhouse,
-    images: [
-      baseImages.gardenTownhouse,
-      baseImages.modernLiving,
-      baseImages.waterfrontVilla,
-      baseImages.cityLoft
-    ],
-    beds: 4,
-    baths: 3,
-    size: 185,
-    status: "For sale",
-    description:
-      "A calm, family-friendly townhouse designed around a lush inner courtyard, blending indoor comfort with outdoor living.",
-    secondaryDescription:
-      "Generous ceiling heights, warm oak finishes, and integrated storage create a home that feels both grounded and refined."
-  },
-  {
-    id: "minimalist-studio",
-    title: "Minimalist Studio Near Riverfront Promenade",
-    location: "Harborfront, Aurora City",
-    priceFormatted: "$540,000",
-    image: baseImages.minimalistStudio,
-    images: [
-      baseImages.minimalistStudio,
-      baseImages.cityLoft,
-      baseImages.modernLiving,
-      baseImages.waterfrontVilla
-    ],
-    beds: 1,
-    baths: 1,
-    size: 54,
-    status: "For sale",
-    description:
-      "An elegantly efficient studio crafted for modern city living, bathed in natural light from oversized windows.",
-    secondaryDescription:
-      "Clever zoning, built-in joinery, and a soft material palette make the space feel generous despite its compact footprint."
-  },
-  {
-    id: "waterfront-villa",
-    title: "Waterfront Villa with Infinity Pool",
-    location: "Aurora Bay, Coastal Region",
-    priceFormatted: "$3,250,000",
-    image: baseImages.waterfrontVilla,
-    images: [
-      baseImages.waterfrontVilla,
-      baseImages.modernLiving,
-      baseImages.skylinePenthouse,
-      baseImages.gardenTownhouse
-    ],
-    beds: 5,
-    baths: 4,
-    size: 320,
-    status: "For sale",
-    description:
-      "A sculptural villa positioned at the water’s edge, with seamless transitions between interior spaces and the surrounding landscape.",
-    secondaryDescription:
-      "Expansive terraces, an infinity pool, and framed ocean views create a retreat-like atmosphere for everyday living."
-  },
-  {
-    id: "city-loft",
-    title: "Converted Warehouse Loft with Exposed Brick",
-    location: "Foundry District, Aurora City",
-    priceFormatted: "$990,000",
-    image: baseImages.cityLoft,
-    images: [
-      baseImages.cityLoft,
-      baseImages.minimalistStudio,
-      baseImages.modernLiving,
-      baseImages.gardenTownhouse
-    ],
-    beds: 2,
-    baths: 2,
-    size: 132,
-    status: "For sale",
-    description:
-      "A characterful loft blending original warehouse textures with contemporary comforts, ideal for creative professionals.",
-    secondaryDescription:
-      "Industrial windows, exposed beams, and polished concrete floors contrast with soft furnishings and curated lighting."
-  },
-  {
-    id: "modern-living-residence",
-    title: "Modern Residence Overlooking City Park",
-    location: "Parkside Avenue, Aurora City",
-    priceFormatted: "$1,280,000",
-    image: baseImages.modernLiving,
-    images: [
-      baseImages.modernLiving,
-      baseImages.skylinePenthouse,
-      baseImages.gardenTownhouse,
-      baseImages.minimalistStudio
-    ],
-    beds: 3,
-    baths: 2,
-    size: 168,
-    status: "For sale",
-    description:
-      "A refined residence with large picture windows framing the greenery of the adjacent city park.",
-    secondaryDescription:
-      "Thoughtful planning separates social and private zones, with generous storage, a flexible study, and soft, timeless finishes."
-  },
-  {
-    id: "luxury-penthouse-suite",
-    title: "Luxury Penthouse Suite with Private Elevator",
-    location: "Downtown Heights, Aurora City",
-    priceFormatted: "$4,500,000",
-    image: baseImages.luxuryPenthouse,
-    images: [
-      baseImages.luxuryPenthouse,
-      baseImages.skylinePenthouse,
-      baseImages.modernLiving,
-      baseImages.cityLoft
-    ],
-    beds: 4,
-    baths: 4,
-    size: 380,
-    status: "For sale",
-    description:
-      "An extraordinary penthouse suite featuring a private elevator entrance, panoramic city views, and a rooftop terrace with infinity pool.",
-    secondaryDescription:
-      "Designed by renowned architects, this residence includes a private wine cellar, home theater, and 24/7 concierge service in a landmark building."
-  },
-  {
-    id: "modern-mansion-estate",
-    title: "Modern Mansion Estate with Private Gardens",
-    location: "Hillside District, Aurora City",
-    priceFormatted: "$5,800,000",
-    image: baseImages.modernMansion,
-    images: [
-      baseImages.modernMansion,
-      baseImages.gardenTownhouse,
-      baseImages.waterfrontVilla,
-      baseImages.luxuryPenthouse
-    ],
-    beds: 6,
-    baths: 5,
-    size: 520,
-    status: "For sale",
-    description:
-      "A stunning contemporary mansion set on expansive grounds, featuring floor-to-ceiling glass walls and seamless indoor-outdoor living.",
-    secondaryDescription:
-      "The property includes a tennis court, private spa, guest house, and meticulously landscaped gardens with water features and mature trees."
-  },
-  {
-    id: "beach-house-retreat",
-    title: "Beach House Retreat with Ocean Access",
-    location: "Coastal Bay, Aurora City",
-    priceFormatted: "$2,950,000",
-    image: baseImages.beachHouse,
-    images: [
-      baseImages.beachHouse,
-      baseImages.waterfrontVilla,
-      baseImages.modernLiving,
-      baseImages.gardenTownhouse
-    ],
-    beds: 4,
-    baths: 3,
-    size: 280,
-    status: "For sale",
-    description:
-      "A serene beachfront property with direct access to pristine sandy beaches, featuring open-plan living spaces and wraparound decks.",
-    secondaryDescription:
-      "Designed for coastal living, the home includes a private boardwalk, outdoor shower, and panoramic ocean views from every room."
-  },
-  {
-    id: "urban-loft-penthouse",
-    title: "Urban Loft Penthouse in Historic Building",
-    location: "Arts Quarter, Aurora City",
-    priceFormatted: "$1,750,000",
-    image: baseImages.urbanLoft,
-    images: [
-      baseImages.urbanLoft,
-      baseImages.cityLoft,
-      baseImages.minimalistStudio,
-      baseImages.modernLiving
-    ],
-    beds: 3,
-    baths: 2,
-    size: 195,
-    status: "For sale",
-    description:
-      "A converted industrial building transformed into a stunning loft penthouse, preserving original architectural details while adding modern luxury.",
-    secondaryDescription:
-      "High ceilings, exposed brick walls, and large factory windows create a unique living space in the heart of the city's cultural district."
-  },
-  {
-    id: "hillside-estate-villa",
-    title: "Hillside Estate Villa with Mountain Views",
-    location: "Summit Ridge, Aurora City",
-    priceFormatted: "$3,650,000",
-    image: baseImages.hillsideEstate,
-    images: [
-      baseImages.hillsideEstate,
-      baseImages.modernMansion,
-      baseImages.gardenTownhouse,
-      baseImages.luxuryPenthouse
-    ],
-    beds: 5,
-    baths: 4,
-    size: 420,
-    status: "For sale",
-    description:
-      "A magnificent hillside villa offering breathtaking mountain and valley views, with multiple terraces and infinity-edge pool.",
-    secondaryDescription:
-      "The property features a private vineyard, guest quarters, and a state-of-the-art home automation system, all set on 2.5 acres of landscaped grounds."
-  }
-];
+    {
+      id: "skyline-penthouse",
+      title: "Skyline Penthouse with Worli Sea Face Views",
+      location: "Worli, Mumbai",
+      priceFormatted: "₹18.5 Cr",
+      image: baseImages.skylinePenthouse,
+      images: [
+        baseImages.skylinePenthouse,
+        baseImages.modernLiving,
+        baseImages.cityLoft,
+        baseImages.minimalistStudio
+      ],
+      beds: 4,
+      baths: 4,
+      size: 4500,
+      status: "For sale",
+      description:
+        "A luxurious penthouse overlooking the Arabian Sea, featuring expansive decks, private elevator access, and Italian marble flooring throughout.",
+      secondaryDescription:
+        "Located in South Mumbai's most prestigious tower, with 5-star concierge services and close proximity to the Bandra-Worli Sea Link."
+    },
+    {
+      id: "garden-townhouse",
+      title: "Heritage Bungalow with Private Lawn",
+      location: "Vasant Vihar, New Delhi",
+      priceFormatted: "₹25 Cr",
+      image: baseImages.gardenTownhouse,
+      images: [
+        baseImages.gardenTownhouse,
+        baseImages.modernLiving,
+        baseImages.waterfrontVilla,
+        baseImages.cityLoft
+      ],
+      beds: 5,
+      baths: 6,
+      size: 6000,
+      status: "For sale",
+      description:
+        "A stately sprawling bungalow in the heart of Delhi, featuring a lush private garden, colonial architecture, and modern interiors.",
+      secondaryDescription:
+        "Includes staff quarters, a modular gourmet kitchen, and is situated in a high-security diplomatic zone."
+    },
+    {
+      id: "minimalist-studio",
+      title: "Premium Studio in Tech Hub",
+      location: "Indiranagar, Bangalore",
+      priceFormatted: "₹2.1 Cr",
+      image: baseImages.minimalistStudio,
+      images: [
+        baseImages.minimalistStudio,
+        baseImages.cityLoft,
+        baseImages.modernLiving,
+        baseImages.waterfrontVilla
+      ],
+      beds: 1,
+      baths: 1,
+      size: 950,
+      status: "For sale",
+      description:
+        "A smart, contemporary studio apartment walking distance from Bangalore's best cafes and workspaces.",
+      secondaryDescription:
+        "Features home automation, soundproof windows, and access to a rooftop infinity pool and co-working lounge."
+    },
+    {
+      id: "waterfront-villa",
+      title: "Goan Portuguese Villa by the River",
+      location: "Assagao, North Goa",
+      priceFormatted: "₹12.5 Cr",
+      image: baseImages.waterfrontVilla,
+      images: [
+        baseImages.waterfrontVilla,
+        baseImages.modernLiving,
+        baseImages.skylinePenthouse,
+        baseImages.gardenTownhouse
+      ],
+      beds: 5,
+      baths: 5,
+      size: 5000,
+      status: "For sale",
+      description:
+        "A painstakingly restored Portuguese-style villa with modern amenities, set amidst swaying palms and river breezes.",
+      secondaryDescription:
+        "Boasts a private lap pool, balcão seating, and traditional laterite stone walls, perfect as a vacation home or high-yield rental."
+    },
+    {
+      id: "city-loft",
+      title: "Artist's Loft in Heritage Precinct",
+      location: "Kala Ghoda, Mumbai",
+      priceFormatted: "₹6.8 Cr",
+      image: baseImages.cityLoft,
+      images: [
+        baseImages.cityLoft,
+        baseImages.minimalistStudio,
+        baseImages.modernLiving,
+        baseImages.gardenTownhouse
+      ],
+      beds: 2,
+      baths: 2,
+      size: 1800,
+      status: "For sale",
+      description:
+        "A rare high-ceilinged loft in a restored British-era building, surrounded by art galleries and heritage structures.",
+      secondaryDescription:
+        "Exposed brick walls, teakwood rafters, and large french windows create a unique blend of old-world charm and bohemian luxury."
+    },
+    {
+      id: "modern-living-residence",
+      title: "Ultra-Modern Apartment near Golf Course",
+      location: "DLF Golf Course Road, Gurgaon",
+      priceFormatted: "₹9.5 Cr",
+      image: baseImages.modernLiving,
+      images: [
+        baseImages.modernLiving,
+        baseImages.skylinePenthouse,
+        baseImages.gardenTownhouse,
+        baseImages.minimalistStudio
+      ],
+      beds: 3,
+      baths: 4,
+      size: 3200,
+      status: "For sale",
+      description:
+        "A high-floor apartment offering sweeping views of the award-winning golf course and the city skyline.",
+      secondaryDescription:
+        "Part of an iconic super-luxury development with club amenities, heated indoor pools, and dedicated concierge."
+    },
+    {
+      id: "luxury-penthouse-suite",
+      title: "Eon Tower Sky Villa",
+      location: "Kharadi, Pune",
+      priceFormatted: "₹5.2 Cr",
+      image: baseImages.luxuryPenthouse,
+      images: [
+        baseImages.luxuryPenthouse,
+        baseImages.skylinePenthouse,
+        baseImages.modernLiving,
+        baseImages.cityLoft
+      ],
+      beds: 4,
+      baths: 4,
+      size: 4000,
+      status: "For sale",
+      description:
+        "A massive single-floor residence in Pune's IT corridor, designed for those who appreciate space and privacy.",
+      secondaryDescription:
+        "Features a wrap-around sky deck, private lift lobby, and VRV air-conditioning, close to international schools and malls."
+    },
+    {
+      id: "modern-mansion-estate",
+      title: "Palatial Farmhouse Retreat",
+      location: "Chattarpur Farms, New Delhi",
+      priceFormatted: "₹45 Cr",
+      image: baseImages.modernMansion,
+      images: [
+        baseImages.modernMansion,
+        baseImages.gardenTownhouse,
+        baseImages.waterfrontVilla,
+        baseImages.luxuryPenthouse
+      ],
+      beds: 7,
+      baths: 8,
+      size: 12000,
+      status: "For sale",
+      description:
+        "A magnificent 2.5-acre estate featuring a contemporary mansion, manicured lawns, and a swimming pool.",
+      secondaryDescription:
+        "Includes a home theatre, gym, spa, gazebo, and fully automated lighting and security systems."
+    },
+    {
+      id: "beach-house-retreat",
+      title: "Sea-Facing Villa on ECR",
+      location: "East Coast Road, Chennai",
+      priceFormatted: "₹7.5 Cr",
+      image: baseImages.beachHouse,
+      images: [
+        baseImages.beachHouse,
+        baseImages.waterfrontVilla,
+        baseImages.modernLiving,
+        baseImages.gardenTownhouse
+      ],
+      beds: 4,
+      baths: 4,
+      size: 3500,
+      status: "For sale",
+      description:
+        "A breezy beachfront villa on the scenic ECR, offering direct beach access and a tranquil lifestyle.",
+      secondaryDescription:
+        "Designed with wind-catchers and courtyards to stay cool naturally, this home is a perfect weekend getaway from the city."
+    },
+    {
+      id: "urban-loft-penthouse",
+      title: "Duplex Penthouse in Jubilee Hills",
+      location: "Jubilee Hills, Hyderabad",
+      priceFormatted: "₹14 Cr",
+      image: baseImages.urbanLoft,
+      images: [
+        baseImages.urbanLoft,
+        baseImages.cityLoft,
+        baseImages.minimalistStudio,
+        baseImages.modernLiving
+      ],
+      beds: 5,
+      baths: 5,
+      size: 5500,
+      status: "For sale",
+      description:
+        "An architectural marvel in Hyderabad's most elite neighborhood, featuring a private terrace garden.",
+      secondaryDescription:
+        "Split-level living with a double-height living room, private gym, and proximity to KBR Park."
+    },
+    {
+      id: "hillside-estate-villa",
+      title: "Colonial Cottage in the Hills",
+      location: "Landour, Mussoorie",
+      priceFormatted: "₹8.2 Cr",
+      image: baseImages.hillsideEstate,
+      images: [
+        baseImages.hillsideEstate,
+        baseImages.modernMansion,
+        baseImages.gardenTownhouse,
+        baseImages.luxuryPenthouse
+      ],
+      beds: 4,
+      baths: 3,
+      size: 2800,
+      status: "For sale",
+      description:
+        "A charming stone cottage nestled in the Himalayas, offering panoramic views of the Doon Valley and snow-capped peaks.",
+      secondaryDescription:
+        "Features wooden flooring, fireplaces in every room, and a sun-drenched conservatory for winter afternoons."
+    }
+  ];
 
 export const featuredProperties = allProperties.slice(0, 3);
 

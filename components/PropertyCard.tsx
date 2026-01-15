@@ -63,7 +63,7 @@ export function PropertyCard({ property, compact }: PropertyCardProps) {
             </span>
             <span className="hidden h-1 w-1 rounded-full bg-slate-300 sm:inline-block" />
             <span className="hidden text-slate-500 font-light sm:inline">
-              {property.size} m²
+              {property.size} sq ft
             </span>
           </div>
           <p className="text-lg font-semibold text-slate-900">

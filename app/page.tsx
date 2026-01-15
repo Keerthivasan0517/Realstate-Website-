@@ -39,7 +39,7 @@ export default function HomePage() {
   return (
     <>
       <ScrollAnimations />
-      
+
       {/* Hero Section - Full Screen Luxury Banner */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         {/* Parallax Background */}
@@ -370,22 +370,22 @@ export default function HomePage() {
                 <div className="flex items-start gap-4">
                   <div className="w-1 h-1 rounded-full bg-slate-900 mt-2" />
                   <div>
-                    <h4 className="font-medium text-slate-900 mb-1">Central Business District</h4>
-                    <p className="text-sm text-slate-600 font-light">Heart of the city, minutes from everything</p>
+                    <h4 className="font-medium text-slate-900 mb-1">South Mumbai & Lutyens' Delhi</h4>
+                    <p className="text-sm text-slate-600 font-light">Heritage meets power corridors</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-1 h-1 rounded-full bg-slate-900 mt-2" />
                   <div>
-                    <h4 className="font-medium text-slate-900 mb-1">Waterfront Communities</h4>
-                    <p className="text-sm text-slate-600 font-light">Stunning views and coastal living</p>
+                    <h4 className="font-medium text-slate-900 mb-1">Coastal & Hill Stations</h4>
+                    <p className="text-sm text-slate-600 font-light">Goa, Alibaug, and the Himalayas</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-1 h-1 rounded-full bg-slate-900 mt-2" />
                   <div>
-                    <h4 className="font-medium text-slate-900 mb-1">Historic Quarters</h4>
-                    <p className="text-sm text-slate-600 font-light">Charm meets modern luxury</p>
+                    <h4 className="font-medium text-slate-900 mb-1">Tech Hubs & IT Corridors</h4>
+                    <p className="text-sm text-slate-600 font-light">Bangalore, Hyderabad, and Pune</p>
                   </div>
                 </div>
               </div>
@@ -399,7 +399,7 @@ export default function HomePage() {
               className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl"
             >
               <GoogleMapComponent
-                center={{ lat: 40.7128, lng: -74.006 }}
+                center={{ lat: 19.0760, lng: 72.8777 }}
                 zoom={12}
               />
             </motion.div>

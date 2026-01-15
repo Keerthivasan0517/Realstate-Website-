@@ -63,10 +63,10 @@ export function Footer() {
                 info@luminousestates.com
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+918220713217"
                 className="transition-colors hover:text-slate-900"
               >
-                +1 (234) 567-890
+                +91 8220713217
               </a>
             </div>
           </div>
