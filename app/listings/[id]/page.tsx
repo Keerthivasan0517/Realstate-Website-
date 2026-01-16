@@ -49,9 +49,9 @@ export default async function PropertyDetailsPage({
               </div>
 
               <div className="grid grid-cols-3 gap-4">
-                {property.images.slice(1, 4).map((image) => (
+                {property.images.slice(1, 4).map((image, i) => (
                   <div
-                    key={image}
+                    key={`${image}-${i}`}
                     className="overflow-hidden rounded-2xl bg-slate-200"
                   >
                     <img

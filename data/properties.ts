@@ -14,6 +14,49 @@ const baseImages = {
   hillsideEstate: "/images/properties/delhi-bungalow.png"
 };
 
+// Distinct Unsplash IDs for variety
+const frontViews = [
+  "https://images.unsplash.com/photo-1600596542815-2a4d9fdd1243?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600047509807-c29dd398f769?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600596542815-2a4d9fdd1243?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f8e?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=800&q=80"
+];
+
+const sideViews = [
+  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1531971589569-0d9370cbe865?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1510627489930-0c1b0dc58e85?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1493809685953-17cd45774d69?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=800&q=80"
+];
+
+const interiorViews = [
+  "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80"
+];
+
 export const allProperties: (Property & {
   images: string[];
   description: string;
@@ -27,9 +70,9 @@ export const allProperties: (Property & {
       image: baseImages.skylinePenthouse,
       images: [
         baseImages.skylinePenthouse,
-        baseImages.modernLiving,
-        baseImages.cityLoft,
-        baseImages.minimalistStudio
+        frontViews[0],
+        sideViews[0],
+        interiorViews[0]
       ],
       beds: 4,
       baths: 4,
@@ -48,9 +91,9 @@ export const allProperties: (Property & {
       image: baseImages.gardenTownhouse,
       images: [
         baseImages.gardenTownhouse,
-        baseImages.modernLiving,
-        baseImages.waterfrontVilla,
-        baseImages.cityLoft
+        frontViews[1],
+        sideViews[1],
+        interiorViews[1]
       ],
       beds: 5,
       baths: 6,
@@ -69,9 +112,9 @@ export const allProperties: (Property & {
       image: baseImages.minimalistStudio,
       images: [
         baseImages.minimalistStudio,
-        baseImages.cityLoft,
-        baseImages.modernLiving,
-        baseImages.waterfrontVilla
+        frontViews[2],
+        sideViews[2],
+        interiorViews[2]
       ],
       beds: 1,
       baths: 1,
@@ -90,9 +133,9 @@ export const allProperties: (Property & {
       image: baseImages.waterfrontVilla,
       images: [
         baseImages.waterfrontVilla,
-        baseImages.modernLiving,
-        baseImages.skylinePenthouse,
-        baseImages.gardenTownhouse
+        frontViews[3],
+        sideViews[3],
+        interiorViews[3]
       ],
       beds: 5,
       baths: 5,
@@ -111,9 +154,9 @@ export const allProperties: (Property & {
       image: baseImages.cityLoft,
       images: [
         baseImages.cityLoft,
-        baseImages.minimalistStudio,
-        baseImages.modernLiving,
-        baseImages.gardenTownhouse
+        frontViews[4],
+        sideViews[4],
+        interiorViews[4]
       ],
       beds: 2,
       baths: 2,
@@ -132,9 +175,9 @@ export const allProperties: (Property & {
       image: baseImages.modernLiving,
       images: [
         baseImages.modernLiving,
-        baseImages.skylinePenthouse,
-        baseImages.gardenTownhouse,
-        baseImages.minimalistStudio
+        frontViews[5],
+        sideViews[5],
+        interiorViews[5]
       ],
       beds: 3,
       baths: 4,
@@ -153,9 +196,9 @@ export const allProperties: (Property & {
       image: baseImages.luxuryPenthouse,
       images: [
         baseImages.luxuryPenthouse,
-        baseImages.skylinePenthouse,
-        baseImages.modernLiving,
-        baseImages.cityLoft
+        frontViews[6],
+        sideViews[6],
+        interiorViews[6]
       ],
       beds: 4,
       baths: 4,
@@ -174,9 +217,9 @@ export const allProperties: (Property & {
       image: baseImages.modernMansion,
       images: [
         baseImages.modernMansion,
-        baseImages.gardenTownhouse,
-        baseImages.waterfrontVilla,
-        baseImages.luxuryPenthouse
+        frontViews[7],
+        sideViews[7],
+        interiorViews[7]
       ],
       beds: 7,
       baths: 8,
@@ -195,9 +238,9 @@ export const allProperties: (Property & {
       image: baseImages.beachHouse,
       images: [
         baseImages.beachHouse,
-        baseImages.waterfrontVilla,
-        baseImages.modernLiving,
-        baseImages.gardenTownhouse
+        frontViews[8],
+        sideViews[8],
+        interiorViews[8]
       ],
       beds: 4,
       baths: 4,
@@ -216,9 +259,9 @@ export const allProperties: (Property & {
       image: baseImages.urbanLoft,
       images: [
         baseImages.urbanLoft,
-        baseImages.cityLoft,
-        baseImages.minimalistStudio,
-        baseImages.modernLiving
+        frontViews[9],
+        sideViews[9],
+        interiorViews[9]
       ],
       beds: 5,
       baths: 5,
@@ -237,9 +280,9 @@ export const allProperties: (Property & {
       image: baseImages.hillsideEstate,
       images: [
         baseImages.hillsideEstate,
-        baseImages.modernMansion,
-        baseImages.gardenTownhouse,
-        baseImages.luxuryPenthouse
+        frontViews[10],
+        sideViews[10],
+        interiorViews[10]
       ],
       beds: 4,
       baths: 3,
@@ -253,4 +296,3 @@ export const allProperties: (Property & {
   ];
 
 export const featuredProperties = allProperties.slice(0, 3);
-

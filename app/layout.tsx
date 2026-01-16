@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import "./styles/globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Chatbot } from "@/components/Chatbot";
 
 export const metadata: Metadata = {
   title: "Luminous Estates – Ultra-Luxury Real Estate",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );
