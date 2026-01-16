@@ -95,7 +95,7 @@ export const Chatbot = () => {
                                 <div className="space-y-6">
                                     <div className="space-y-2">
                                         <p className="text-slate-600">
-                                            I'm an AI assistant, I'm here to answer all of your questions.
+                                            I&apos;m an AI assistant, I&apos;m here to answer all of your questions.
                                         </p>
                                         <p className="text-slate-600">
                                             Before we get started, please provide your details below.
